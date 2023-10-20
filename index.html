@@ -24,7 +24,7 @@
             <div id="form-info">
                 <div id="header">
                     <h2>This is not a real online service! If you have been fooled, I've done 
-                        a great job at designing this! you know youd sign up for the service 
+                        a great job at designing this! You know you'd sign up for the service 
                         because it's worth <i>every</i> penny :)</h2>
                     <h3>You <i>know</i> you want to.</h3>
                 </div>
@@ -37,32 +37,34 @@
                             <div id="col-one">
                                 <label for="first-name">FIRST NAME</label>
                                 <br>
-                                <input type="text" id="first-name" name="first-name">
+                                <input type="text" id="first-name" name="first-name" required>
                                 <br><br>
                                 <label for="email">EMAIL</label>
                                 <br>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" required>
                                 <br><br>
                                 <label for="password">PASSWORD</label>
                                 <br>
-                                <input type="password" id="password" name="password">
+                                <input type="password" id="password" name="password" required>        
+                                <p id="password-error"></p>
                             </div>
                             <div id="col-two">
-                                <label for="last-name">LAST NAME</label>
+                                <label for="last-name" >LAST NAME</label>
                                 <br>
-                                <input type="text" id="last-name" name="last-name">
+                                <input type="text" id="last-name" name="last-name" required>
                                 <br><br>
                                 <label for="phone-num">PHONE NUMBER</label>
                                 <br>
-                                <input type="tel" id="phone-num" name="phone-num">
+                                <input type="tel" id="phone-num" name="phone-num" required>
                                 <br><br>
                                 <label for="conf-password"> CONFIRM PASSWORD</label>
                                 <br>
-                                <input type="password" id="conf-password" name="conf-password">
+                                <input type="password" id="conf-password" name="conf-password" required>
+                                <br>
                             </div>
                         </div>
                     <div id="button-container">
-                        <button type="submit">Create Account</button>
+                        <button id="submit-button" type="submit">Create Account</button>
                         <p>Already have an account? <a href="www.google.com">Log in</a></p>
                     </div>
                     </form>
